@@ -1,0 +1,9 @@
+function courage (name, age, birth, nationality) {
+    console.log("Hello! my name is " + name),
+    console.log(" and I am " + age + "years old."),
+    console.log("I born in " + birth + " and I am from " +nationality + ". Thanks!")
+};
+
+courage ("Hyuna", 25, "5/20", "Korea");
+courage ("Lin", 26, "8/13", "Japan");
+courage ("Kyle", 30, "12/24", "Canada");
