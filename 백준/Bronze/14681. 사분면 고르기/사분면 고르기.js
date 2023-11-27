@@ -1,14 +1,9 @@
-const input = require('fs').readFileSync(0).toString().split('\n').map(Number);
-const x = input[0];
-const y = input[1];
+const fs = require('fs');
+const [A, B] = fs.readFileSync(0).toString().trim().split("\n").map(Number);
 
-
-if (x>0 && y>0) {
-    console.log(1);
-} else if (x<0 && y>0) {
-    console.log(2);
-} else if (x<0 && y<0) {
-    console.log(3);
-} else {
-    console.log(4);
+if (A>0) {
+    (B>0) ? console.log("1") : console.log("4");
+}
+else {
+    (B>0) ? console.log("2") : console.log("3");
 }
