@@ -1,4 +1,4 @@
 func solution(_ num1: Int, _ num2: Int) -> Int {
-    let result = Double(num1) / Double(num2) * 1000
-    return Int(result)
+    let result = (num1 * 1000) / num2
+    return result
 }
