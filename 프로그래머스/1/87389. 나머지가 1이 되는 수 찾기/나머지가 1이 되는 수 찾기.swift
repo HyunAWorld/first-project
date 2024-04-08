@@ -1,13 +1,14 @@
 import Foundation
 
 func solution(_ n:Int) -> Int {
-    var count = 1
-    while true {
-        if (n % count) == 1 {
-            break
+   
+    var result = [Int]()
+    
+    for i in 1...n {
+        if n % i == 1 {
+            result.append(i)
         }
-        count += 1
     }
 
-    return count
+    return result.min() ?? 0
 }
