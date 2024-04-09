@@ -1,5 +1,8 @@
 func solution(_ x:Int, _ n:Int) -> [Int64] {
+    var answer = [Int64]()
     
-    return Array(1...n).compactMap{Int64(x * $0)}
-    
+    for zz in (1...n) {
+        answer.append(Int64(x*zz))
+        }
+    return answer
 }
